@@ -24,5 +24,5 @@ def home(request):
 urlpatterns = [
     path('',home),
     path('admin/', admin.site.urls),
-    path('accounts/', include('allauth.urls')),
+    path('accounts/', include('allauth.urls'),name='github'),
 ]
